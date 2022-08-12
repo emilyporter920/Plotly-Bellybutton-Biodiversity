@@ -97,6 +97,11 @@ function buildCharts(sample) {
         tickvals: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
         ticktext: yticks
       },
+      font: {
+        family: "OCR A Std, monospace",
+        size: 15,
+        color: '#7f7f7f'
+      }
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout, { responsive: true });
@@ -121,8 +126,12 @@ function buildCharts(sample) {
       showlegend: false,
       xaxis: { title: "OTU ID", automargin: true },
       yaxis: { automargin: true },
-      hovermode: "closest"
-    };
+      hovermode: "closest",
+      font: {
+        family: "OCR A Std, monospace",
+        size: 15,
+        color: '#7f7f7f'
+    }};
 
     console.log(bubbleLayout);
 
@@ -145,6 +154,11 @@ function buildCharts(sample) {
       type: "indicator",
       mode: "gauge+number",
       title: {text: "<b>Belly Button Washing Frequency</b><br>Scrubs Per Week"},
+      font: {
+        family: 'Courier New, monospace',
+        size: 18,
+        color: '#7f7f7f'
+      },
       gauge: {
         axis: {
           range: [null,10],
@@ -168,10 +182,15 @@ function buildCharts(sample) {
       autosize: true,
       annotations: [{
         x: 0.5,
-        y: -0.05,
+        y: 0,
         text: "Time(s) Per Week",
         showarrow:false
-      }]
+      }],
+      font: {
+        family: "OCR A Std, monospace",
+        size: 15,
+        color: '#7f7f7f'
+      }
     };
 
     // 6. Use Plotly to plot the gauge data and layout.

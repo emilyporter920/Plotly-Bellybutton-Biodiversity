@@ -1,0 +1,12 @@
+body {
+
+    color: #000000;
+    font-family: "OCR A Std", monospace;
+  }
+  .jumbotron {
+    background-image: url("../../images/bacteriaheader2.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: #fdfdfd;
+    font-family: "OCR A Std", monospace;
+  }
